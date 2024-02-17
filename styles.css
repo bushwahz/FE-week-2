@@ -1,0 +1,223 @@
+/*
+  Author:  bushwahz
+  Subject: CSS Coding Assignment
+  FE Week 2
+*/
+
+/* ---DEFAULT STYLES--- */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+
+/* ---GLOBAL STYLES--- */
+body {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+line-height: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 300;
+font-style: normal;
+line-height: 1.6em;
+text-transform: none;
+text-decoration: none;
+}
+
+p {
+margin: 20px 0;
+}
+
+/* ---NAVBAR STYLES--- */
+.navbar {
+height: 5vh;
+background-color: #2F4858;
+color:#fff;
+padding: 6px 0;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+width: 100%;
+}
+
+.nav-list {
+list-style: none;
+}
+
+.nav-list li {
+display: inline;
+margin: 0 10px;
+}
+
+.nav-list a {
+text-decoration: none;
+color: #fff;
+}
+
+/* ---LANDING PAGE STYLES--- */
+.landing {
+height: 80vh;
+display: flex;
+background-image: url("https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-size: cover;
+color: #fff;
+text-align: center;
+padding: 100px 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.landing h1,
+.landing p {
+text-shadow: rgb(0, 0, 0) 10px 0 20px;
+}
+
+.landing h1 {
+font-size: 4rem;
+}
+
+.landing p {
+margin-top: 20px;
+font-size: 1rem;
+}
+
+/* ---MAIN CONTENT STYLES--- */
+.main-content {
+padding: 10px 40px 40px 40px;
+text-align: center;
+block-size: fit-content;
+}
+
+.main-content h2 {
+margin: 30px 0;
+color: white;
+}
+
+.main-content h3 {
+margin: 26px 0;
+color: white;
+}
+
+#about {
+background-color: #006B5E;
+color: #fff;
+}
+
+#menu {
+background-color: #D86F0F;
+}
+
+#contact {
+background-color: #534439;
+}
+
+img {
+max-inline-size: 100%;
+block-size: auto;
+height: 40vh;
+border: 1px solid #333;
+}
+
+/* ---TABLE STYLES ---> */
+.table-container {
+overflow-x:auto;
+}
+
+table {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+th {
+border: 1px solid black;
+padding: 8px;
+background-color: #006B5E;
+color: #fff;
+}
+
+td {
+border: 1px solid black;
+padding: 8px;
+background-color: #fff;
+}
+
+thead th {
+width: 25%;
+}
+
+/* ---MISC STYLES ---> */
+.combo-container {
+text-align: center;
+}
+
+.combos {
+color: #fff;
+display: inline-block;
+text-align: left;
+}
+
+/* ---FORM STYLES ---> */
+input {
+width: 60%;
+padding: 10px;
+margin: 15px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+background-color: #006B5E;
+border: none;
+color: white;
+padding: 16px 32px;
+text-decoration: none;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+/* ---FOOTER STYLES ---> */
+.footer {
+height: 4vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #2F4858;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+}
+
+/* ---MEDIA QUERIES--- */
+/* ---TABLET BREAKPOINT--- */
+@media (max-width:786px) {
+.landing h1 {
+  font-size: 3.5rem;
+}
+
+.landing p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  width: 50%;
+}
+}
+
+/* ---MOBILE BREAKPOINT--- */
+@media (max-width:400) {
+.navbar {
+  height: 15vh;
+}
+.landing h1 {
+  font-size: 2rem;
+}
+
+.landing p {
+  margin-top: 20px;
+  font-size: 1rem;
+  width: 60%;
+}
+}
